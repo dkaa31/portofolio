@@ -29,4 +29,4 @@ Saya **Aljudika Riziq Juhansyah**, siswa XII RPL 2 di SMKN 1 Karawang yang seben
 
 ---
 
-*© 2025 Aljudika Riziq Juhansyah*
+*© 2026 Aljudika Riziq Juhansyah*
