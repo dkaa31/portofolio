@@ -10,7 +10,6 @@ export default function Footer() {
           <p className="text-white font-bold text-lg">
             <span className="gradient-text">A</span>ljudika<span className="text-accent">.</span>
           </p>
-          <p className="text-slate-600 text-xs mt-1">XII RPL 2 · SMKN 1 Karawang</p>
         </div>
         <p className="text-slate-700 text-xs flex items-center gap-1.5">
         </p>
