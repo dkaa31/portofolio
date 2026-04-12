@@ -2,41 +2,38 @@ import React from 'react';
 import { MapPin, GraduationCap, Code2, Heart } from 'lucide-react';
 import { profile } from '../data/portfolio';
 import { useFadeIn } from '../hooks/useFadeIn';
+import { useLang } from '../context/LanguageContext';
 
 export default function About() {
   const ref = useFadeIn();
+  const { tr } = useLang();
+  const a = tr.about;
 
   return (
     <section id="about" className="py-20 sm:py-28 relative">
       <div className="absolute right-0 top-1/2 -translate-y-1/2 w-48 sm:w-64 h-48 sm:h-64 bg-accent/5 rounded-full blur-[100px] pointer-events-none" />
       <div className="max-w-6xl mx-auto px-5 sm:px-6" ref={ref}>
-        <SectionTitle tag="01" label="Tentang Saya" />
+        <SectionTitle tag={a.tag} label={a.title} />
 
         <div className="grid md:grid-cols-5 gap-8 md:gap-12 mt-10 sm:mt-14">
-          {/* Text */}
           <div className="md:col-span-3 space-y-4">
             <p className="text-slate-400 leading-relaxed text-sm sm:text-base">
-              Nama lengkap saya <span className="text-white font-semibold">{profile.name}</span>. Saya adalah siswa kelas 12 jurusan Rekayasa Perangkat Lunak (RPL) di SMKN 1 Karawang yang sebentar lagi akan menyelesaikan pendidikan.
+              {a.p1} <span className="text-white font-semibold">{profile.name}</span>{a.p1b}
             </p>
-            <p className="text-slate-400 leading-relaxed text-sm sm:text-base">
-              Selama di sekolah, saya belajar dasar-dasar pengembangan web dan pemrograman. Saya juga aktif di dunia olahraga dan telah meraih beberapa prestasi yang membanggakan.
-            </p>
-            <p className="text-slate-400 leading-relaxed text-sm sm:text-base">
-              Saya siap untuk terus belajar, berkembang, dan memberikan kontribusi terbaik di dunia kerja maupun pendidikan lanjutan.
-            </p>
+            <p className="text-slate-400 leading-relaxed text-sm sm:text-base">{a.p2}</p>
+            <p className="text-slate-400 leading-relaxed text-sm sm:text-base">{a.p3}</p>
             <div className="pt-2">
               <a href="#contact" className="inline-flex items-center gap-2 text-accent text-sm font-medium hover:gap-3 transition-all duration-200">
-                Mari berkenalan →
+                {a.cta}
               </a>
             </div>
           </div>
 
-          {/* Cards */}
           <div className="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 gap-3">
-            <InfoCard icon={<GraduationCap size={16} />} label="Pendidikan" value="SMKN 1 Karawang — XII RPL 2" />
-            <InfoCard icon={<MapPin size={16} />} label="Lokasi" value="Karawang, Jawa Barat" />
-            <InfoCard icon={<Code2 size={16} />} label="Fokus" value="Web Development" />
-            <InfoCard icon={<Heart size={16} />} label="Hobi" value="Olahraga & Coding" />
+            <InfoCard icon={<GraduationCap size={16} />} label={a.edu_label}   value={a.edu_value} />
+            <InfoCard icon={<MapPin size={16} />}         label={a.loc_label}   value={a.loc_value} />
+            <InfoCard icon={<Code2 size={16} />}          label={a.focus_label} value={a.focus_value} />
+            <InfoCard icon={<Heart size={16} />}          label={a.hobby_label} value={a.hobby_value} />
           </div>
         </div>
       </div>

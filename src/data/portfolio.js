@@ -4,7 +4,7 @@ export const profile = {
   role: "Siswa RPL · SMKN 1 Karawang",
   bio: "Siswa kelas 12 Rekayasa Perangkat Lunak di SMKN 1 Karawang. Tertarik di bidang pengembangan web dan aktif di dunia olahraga. Siap untuk terus belajar dan berkembang setelah lulus.",
   github: "https://github.com/dkaa31",
-  email: "dikajuhansyah@example.com", 
+  email: "dikajuhansyah@gmail.com", 
   photo: "/foto.png",
   socials: {
     instagram: { url: "https://instagram.com/dkaa.rz", username: "@dkaa.rz" },
@@ -30,7 +30,7 @@ export const skills = [
 
 export const projects = [
   {
-    title: "iLabs",
+    title: "ILabs",
     description: "Sistem Informasi Manajemen Laboratorium SMK berbasis web. Fitur lengkap: absensi QR Code, jadwal pelajaran, manajemen guru & siswa, pengajuan izin, display ruangan real-time, dan dashboard publik. Multi-role: Admin, Guru, dan Siswa.",
     tech: ["Laravel", "PHP", "MySQL", "Tailwind CSS", "Vite"],
     github: "https://github.com/dkaa31/Ilabs",
