@@ -13,7 +13,6 @@ export default function Footer() {
           <p className="text-slate-600 text-xs mt-1">XII RPL 2 · SMKN 1 Karawang</p>
         </div>
         <p className="text-slate-700 text-xs flex items-center gap-1.5">
-          Dibuat dengan <Heart size={11} className="text-accent" /> menggunakan React & Tailwind CSS
         </p>
         <p className="text-slate-700 text-xs">© {new Date().getFullYear()} {profile.name}</p>
       </div>
