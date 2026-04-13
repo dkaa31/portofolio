@@ -6,9 +6,9 @@ import { SectionTitle } from './About';
 import { useFadeIn } from '../hooks/useFadeIn';
 import { useLang } from '../context/LanguageContext';
 
-const EMAILJS_SERVICE_ID  = 'YOUR_SERVICE_ID';
-const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';
-const EMAILJS_PUBLIC_KEY  = 'YOUR_PUBLIC_KEY';
+const EMAILJS_SERVICE_ID  = 'service_pgc9q06';
+const EMAILJS_TEMPLATE_ID = 'template_1p7xx2c';
+const EMAILJS_PUBLIC_KEY  = '5Lrp5hFmevKr1Iq0P';
 
 function TikTokIcon({ size = 16 }) {
   return (
