@@ -1,8 +1,8 @@
 export const profile = {
   name: "Aljudika Riziq Juhansyah",
   nickname: "Dika",
-  role: "Siswa RPL · SMKN 1 Karawang",
-  bio: "Siswa kelas 12 Rekayasa Perangkat Lunak di SMKN 1 Karawang. Tertarik di bidang pengembangan web dan aktif di dunia olahraga. Siap untuk terus belajar dan berkembang setelah lulus.",
+  role: "Informatika · UIN Sunan Gunung Djati Bandung",
+  bio: "Mahasiswa Teknik Informatika di UIN Sunan Gunung Djati Bandung. Alumni RPL SMKN 1 Karawang. Tertarik di bidang pengembangan web dan aktif di dunia olahraga. Terus belajar dan berkembang setiap hari.",
   github: "https://github.com/dkaa31",
   email: "dikajuhansyah@gmail.com", 
   photo: "/foto.png",

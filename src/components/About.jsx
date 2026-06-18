@@ -30,7 +30,7 @@ export default function About() {
           </div>
 
           <div className="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 gap-3">
-            <InfoCard icon={<GraduationCap size={16} />} label={a.edu_label}   value={a.edu_value} />
+            <InfoCard icon={<GraduationCap size={16} />} label={a.edu_label}   value={a.edu_value} sub={a.edu_value2} />
             <InfoCard icon={<MapPin size={16} />}         label={a.loc_label}   value={a.loc_value} />
             <InfoCard icon={<Code2 size={16} />}          label={a.focus_label} value={a.focus_value} />
             <InfoCard icon={<Heart size={16} />}          label={a.hobby_label} value={a.hobby_value} />
@@ -41,7 +41,7 @@ export default function About() {
   );
 }
 
-function InfoCard({ icon, label, value }) {
+function InfoCard({ icon, label, value, sub }) {
   return (
     <div className="glow-card flex items-center gap-3 sm:gap-4 bg-dark-700/60 border border-white/5 rounded-2xl p-3.5 sm:p-4 hover:bg-dark-700 transition-all duration-300">
       <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-accent/10 flex items-center justify-center text-accent flex-shrink-0">
@@ -50,6 +50,7 @@ function InfoCard({ icon, label, value }) {
       <div className="min-w-0">
         <p className="text-xs text-slate-600 mb-0.5">{label}</p>
         <p className="text-xs sm:text-sm text-white font-medium truncate">{value}</p>
+        {sub && <p className="text-xs text-slate-500 truncate mt-0.5">{sub}</p>}
       </div>
     </div>
   );

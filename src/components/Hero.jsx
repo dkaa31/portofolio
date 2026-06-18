@@ -3,8 +3,8 @@ import { Github, ArrowDown, Sparkles } from 'lucide-react';
 import { profile, projects, certificates, experience } from '../data/portfolio';
 import { useLang } from '../context/LanguageContext';
 
-const rolesId = ['Web Developer', 'Siswa RPL', 'Problem Solver'];
-const rolesEn = ['Web Developer', 'RPL Student', 'Problem Solver'];
+const rolesId = ['Web Developer', 'Mahasiswa Informatika', 'Atlet Muda', 'Problem Solver'];
+const rolesEn = ['Web Developer', 'Informatics Student', 'Young Athlete', 'Problem Solver'];
 
 export default function Hero() {
   const { lang, tr } = useLang();
@@ -109,7 +109,7 @@ export default function Hero() {
               </div>
               <div className="absolute -bottom-3 -right-3 sm:-bottom-4 sm:-right-4 bg-dark-700 border border-white/10 rounded-xl sm:rounded-2xl px-3 py-2 sm:px-4 sm:py-2.5 shadow-xl">
                 <p className="text-xs text-slate-500">{tr.hero.class_label}</p>
-                <p className="text-xs sm:text-sm font-bold text-white">XII RPL 2</p>
+                <p className="text-xs sm:text-sm font-bold text-white">Informatika · UIN SGD</p>
               </div>
             </div>
           </div>
