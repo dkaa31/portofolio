@@ -62,7 +62,7 @@ export default function Hero() {
             </div>
 
             <p className="text-slate-500 text-sm sm:text-base max-w-md mx-auto md:mx-0 mb-8 leading-relaxed">
-              {profile.bio}
+              {tr.hero.bio}
             </p>
 
             <div className="flex items-center justify-center md:justify-start gap-3 flex-wrap">
