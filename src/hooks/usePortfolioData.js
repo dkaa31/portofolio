@@ -14,6 +14,8 @@ export function usePortfolioData() {
 
   const fetchAll = async () => {
     try {
+      if (!supabase) throw new Error('Supabase not configured');
+
       const [profileRes, projectsRes, experienceRes, certsRes] = await Promise.all([
         supabase.from('profile').select('*').single(),
         supabase.from('projects').select('*').order('created_at'),
