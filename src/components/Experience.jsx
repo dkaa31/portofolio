@@ -4,10 +4,13 @@ import { experience } from '../data/portfolio';
 import { SectionTitle } from './About';
 import { useFadeIn } from '../hooks/useFadeIn';
 import { useLang } from '../context/LanguageContext';
+import { useData } from '../context/DataContext';
 
 export default function Experience() {
   const ref = useFadeIn();
   const { tr } = useLang();
+  const { data } = useData();
+  const experience = data.experience;
 
   return (
     <section id="experience" className="py-20 sm:py-28 bg-dark-800/30">

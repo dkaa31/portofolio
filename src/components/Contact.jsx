@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { Github, Mail, Instagram, Linkedin, Send, MessageCircle, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
-import { profile } from '../data/portfolio';
+import { profile as fallbackProfile } from '../data/portfolio';
 import { SectionTitle } from './About';
 import { useFadeIn } from '../hooks/useFadeIn';
 import { useLang } from '../context/LanguageContext';
+import { useData } from '../context/DataContext';
 
 const EMAILJS_SERVICE_ID  = 'service_pgc9q06';
 const EMAILJS_TEMPLATE_ID = 'template_1p7xx2c';
@@ -21,6 +22,8 @@ function TikTokIcon({ size = 16 }) {
 export default function Contact() {
   const ref = useFadeIn();
   const { tr } = useLang();
+  const { data } = useData();
+  const profile = data.profile || fallbackProfile;
   const c = tr.contact;
 
   const socialLinks = [

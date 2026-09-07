@@ -30,11 +30,17 @@ export const skills = [
 
 export const projects = [
   {
-    title: "ILabs",
+    title: "iLabs",
     description: "Sistem Informasi Manajemen Laboratorium SMK berbasis web. Fitur lengkap: absensi QR Code, jadwal pelajaran, manajemen guru & siswa, pengajuan izin, display ruangan real-time, dan dashboard publik. Multi-role: Admin, Guru, dan Siswa.",
     tech: ["Laravel", "PHP", "MySQL", "Tailwind CSS", "Vite"],
     github: "https://github.com/dkaa31/Ilabs",
-    demo: null,
+    liveUrl: null,       // isi dengan URL live demo jika ada
+    downloadUrl: null,   // isi dengan URL download jika ada
+    images: [
+      // isi dengan path gambar, contoh: "/projects/ilabs/ss1.png"
+      // "/projects/ilabs/ss1.png",
+      // "/projects/ilabs/ss2.png",
+    ],
     category: "Web Dev",
   },
   {
@@ -42,7 +48,9 @@ export const projects = [
     description: "Aplikasi manajemen parkir berbasis web dengan fitur pencatatan kendaraan masuk/keluar, kalkulasi biaya otomatis, QR Code tiket, cetak struk PDF format thermal, dan rekap laporan harian & bulanan. Multi-role: Admin, Petugas, dan Owner.",
     tech: ["Laravel", "PHP", "MySQL", "Bootstrap", "Alpine.js"],
     github: "https://github.com/dkaa31/smartpark",
-    demo: null,
+    liveUrl: null,
+    downloadUrl: null,
+    images: [],
     category: "Web Dev",
   },
   {
@@ -50,7 +58,9 @@ export const projects = [
     description: "Project berbasis Internet of Things (IoT) menggunakan Arduino. Eksplorasi integrasi perangkat keras dengan perangkat lunak untuk solusi otomasi dan monitoring.",
     tech: ["Arduino", "IoT", "C++"],
     github: "https://github.com/dkaa31/IOT",
-    demo: null,
+    liveUrl: null,
+    downloadUrl: null,
+    images: [],
     category: "Web Dev",
   },
   {
@@ -58,7 +68,9 @@ export const projects = [
     description: "Proyek tim yang berfokus pada identitas visual brand SWARAJA. Mencakup eksplorasi konsep, konsistensi brand, dan membangun karakter brand yang kuat melalui panduan visual yang matang.",
     tech: ["Branding", "Visual Identity", "Design Collaboration"],
     github: null,
-    demo: "https://www.linkedin.com/posts/aljudika_brand-guideline-swaraja-ugcPost-7405270039425224704-wE6A",
+    liveUrl: "https://www.linkedin.com/posts/aljudika_brand-guideline-swaraja-ugcPost-7405270039425224704-wE6A",
+    downloadUrl: null,
+    images: [],
     category: "Design",
   },
   {
@@ -66,7 +78,9 @@ export const projects = [
     description: "Desain packaging brand SWARAJA yang dikembangkan bersama tim. Menghadirkan tampilan modern, rapi, dan bernuansa hangat dengan sentuhan keluarga agar brand terasa lebih dekat dengan konsumen.",
     tech: ["Packaging Design", "Branding", "Visual Identity"],
     github: null,
-    demo: "https://www.linkedin.com/posts/aljudika_packaging-swaraja-ugcPost-7405270973874118656-mBVk",
+    liveUrl: "https://www.linkedin.com/posts/aljudika_packaging-swaraja-ugcPost-7405270973874118656-mBVk",
+    downloadUrl: null,
+    images: [],
     category: "Design",
   },
 ];

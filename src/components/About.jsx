@@ -3,10 +3,13 @@ import { MapPin, GraduationCap, Code2, Heart } from 'lucide-react';
 import { profile } from '../data/portfolio';
 import { useFadeIn } from '../hooks/useFadeIn';
 import { useLang } from '../context/LanguageContext';
+import { useData } from '../context/DataContext';
 
 export default function About() {
   const ref = useFadeIn();
   const { tr } = useLang();
+  const { data } = useData();
+  const { profile } = data;
   const a = tr.about;
 
   return (

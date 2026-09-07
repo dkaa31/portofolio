@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Github, ArrowDown, Sparkles } from 'lucide-react';
-import { profile, projects, certificates, experience } from '../data/portfolio';
+import { useData } from '../context/DataContext';
 import { useLang } from '../context/LanguageContext';
 
 const rolesId = ['Web Developer', 'Mahasiswa Informatika', 'Atlet Muda', 'Problem Solver'];
@@ -8,6 +8,8 @@ const rolesEn = ['Web Developer', 'Informatics Student', 'Young Athlete', 'Probl
 
 export default function Hero() {
   const { lang, tr } = useLang();
+  const { data } = useData();
+  const { profile, projects, certificates, experience } = data;
   const roles = lang === 'id' ? rolesId : rolesEn;
 
   const [roleIndex, setRoleIndex] = useState(0);
@@ -62,7 +64,7 @@ export default function Hero() {
             </div>
 
             <p className="text-slate-500 text-sm sm:text-base max-w-md mx-auto md:mx-0 mb-8 leading-relaxed">
-              {tr.hero.bio}
+              {lang === 'en' && profile.bio_en ? profile.bio_en : tr.hero.bio}
             </p>
 
             <div className="flex items-center justify-center md:justify-start gap-3 flex-wrap">

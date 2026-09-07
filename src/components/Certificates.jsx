@@ -4,11 +4,14 @@ import { certificates } from '../data/portfolio';
 import { SectionTitle } from './About';
 import { useFadeIn } from '../hooks/useFadeIn';
 import { useLang } from '../context/LanguageContext';
+import { useData } from '../context/DataContext';
 import CertModal from './CertModal';
 
 export default function Certificates() {
   const ref = useFadeIn();
   const { tr } = useLang();
+  const { data } = useData();
+  const certificates = data.certificates;
   const c = tr.certificates;
   const [selected, setSelected] = useState(null);
 
